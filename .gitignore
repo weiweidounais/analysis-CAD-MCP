@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.cad_mcp/
+cad_mcp.log
+cad_visual_exports/
+cad_image_traces/
+collision-review/
