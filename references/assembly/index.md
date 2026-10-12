@@ -21,7 +21,7 @@ Currently available modules:
 
 - `standards/generic-mechanical.md`: baseline mechanical assembly drawing
   practice for BOMs, item numbers, assembly dimensions, sections, hatches,
-  exploded views, and best-cad-mcp verification.
+  exploded views, and analysis-cad-mcp verification.
 
 ## Module Contract
 
@@ -32,12 +32,12 @@ Each standard module should be self-contained and include:
 - View, section, and exploded-view rules.
 - BOM and item-numbering rules.
 - Assembly dimensioning and technical note rules.
-- best-cad-mcp tool mapping for geometry, annotations, BOMs, and verification.
+- analysis-cad-mcp tool mapping for geometry, annotations, BOMs, and verification.
 - A completion checklist.
 - Source notes or assumptions.
 
 Keep standard-specific wording inside the module. The main `SKILL.md` should
-only route to this index and describe best-cad-mcp operating rules.
+only route to this index and describe analysis-cad-mcp operating rules.
 
 ## Standard Module Naming
 

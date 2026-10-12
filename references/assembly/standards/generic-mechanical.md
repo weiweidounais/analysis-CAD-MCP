@@ -2,7 +2,7 @@
 
 Use this module when no more specific project, company, customer, national, or
 industry standard is available. It is a practical baseline for mechanical
-assembly drawings created or checked with best-cad-mcp.
+assembly drawings created or checked with analysis-cad-mcp.
 
 ## Precedence
 
@@ -53,7 +53,7 @@ concept-only sketch:
 
 ## View Rules
 
-- Start with the view that best explains how the assembly works or is built.
+- Start with the view that clearly explains how the assembly works or is built.
 - Prefer the fewest views that clearly show part relationships.
 - Use section views for internal relationships, but simplify standard purchased
   parts when full section detail would obscure the assembly.
@@ -110,7 +110,7 @@ Consider adding notes for:
 - Handling, shipping, storage, or maintenance.
 - Unconfirmed assumptions marked `TBD` or "to confirm".
 
-## best-cad-mcp Tool Mapping
+## analysis-cad-mcp Tool Mapping
 
 - Plates and rectangular parts: `draw_rectangle`.
 - Regular nuts/forms: `draw_polygon`.
@@ -148,7 +148,7 @@ Consider adding notes for:
   `get_dimension_measurement` when important.
 - Hatches created with `add_hatch` plus boundary tools.
 - Repeated items created with blocks/arrays, not repeated manual copies.
-- Any needed COM automation converted into a best-cad-mcp tool before use; no
+- Any needed COM automation converted into a analysis-cad-mcp tool before use; no
   standalone drawing scripts used as an agent-side shortcut.
 - `scan_all_entities`, `build_drawing_ir`, semantic detection, dimension
   binding, constraints, validation, and mapped export checks completed.
@@ -158,7 +158,7 @@ Consider adding notes for:
 ## Source Notes
 
 This module distills public engineering drawing guidance and standards-oriented
-sources into operational best practices for best-cad-mcp. Sources consulted:
+sources into operational drawing practices for analysis-cad-mcp. Sources consulted:
 
 - https://www.asme.org/codes-standards/find-codes-standards/y14-24-types-applications-engineering-drawings
 - https://dictionary.action-engineering.com/pageview/ASME%20Y14.24/null

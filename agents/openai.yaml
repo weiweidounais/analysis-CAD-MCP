@@ -6,7 +6,7 @@ interface:
 dependencies:
   tools:
     - type: "mcp"
-      value: "best-cad-mcp"
+      value: "analysis-cad-mcp"
       description: "AutoCAD MCP server with CAD-IR, semantic graph, dimension binding, constraints, validation, VLM overlay/pixel grounding, CADPlan variables/dry-run/execution, drawing, query, model-private annotation, BOM/table, block, dimension, hatch, layout, and export tools."
 
 policy:

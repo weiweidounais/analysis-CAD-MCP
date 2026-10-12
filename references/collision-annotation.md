@@ -96,4 +96,4 @@ Autodesk 的 [CheckInterference 接口](https://help.autodesk.com/cloudhelp/2024
 - “将这份零件干涉清单的坐标标到装配图上，生成问题描述。”
 - “只输出碰撞点位与文字报告，不改原 DWG。”
 
-这些是流程指令扩展，不是新安装的碰撞求解器。实际检测和 DWG 标注依赖可用且已验证的 best-cad-mcp 工具、AutoCAD 连接及输入几何。
+这些是流程指令扩展，不是新安装的碰撞求解器。实际检测和 DWG 标注依赖可用且已验证的 analysis-cad-mcp 工具、AutoCAD 连接及输入几何。

@@ -39,7 +39,7 @@
 | MCP / AutoCAD 实时连接 | 尚未验证 |
 | 真实图纸上的检测、标注、导出 | 尚未验证 |
 
-实际运行依赖 `best-cad-mcp`、Windows 和 AutoCAD。检测能力、测量精度和输出形式以当前工具及输入几何为准；这是 Skill 包，不是完整的 CAD 内核或新 MCP 服务。
+实际运行依赖 `analysis-cad-mcp`、Windows 和 AutoCAD。检测能力、测量精度和输出形式以当前工具及输入几何为准；这是 Skill 包，不是完整的 CAD 内核或新 MCP 服务。
 
 ## 4. 如何调整本 Skill
 
@@ -47,4 +47,4 @@
 - 修改 [collision-annotation.md](references/collision-annotation.md) 可以调整编号、点位字段、图层、文字格式、标注方法与报告要求。
 - 项目对象集合、规范和最小净距在任务中提供或从图纸/项目资料读取；不要将某次示例要求固化为通用标准。
 
-基础装配图工作流来自 [best-cad-mcp](https://github.com/LokmenoWer/best-cad-mcp)，上游 MIT 版权声明保留。两张 Preview 图片由本项目独立制作，均为示意，不代表上游演示或已通过真实 CAD 验证。
+analysis-CAD-MCP 保留基础装配图参考工作流和原作者 MIT 版权声明（见 [LICENSE](LICENSE)）。两张 Preview 图片由本项目独立制作，均为示意，不代表已通过真实 CAD 验证。

@@ -2,7 +2,7 @@
 name: analysis-cad-mcp
 description: >-
   Create, inspect, validate, repair, trace from images, and export AutoCAD
-  mechanical and assembly drawings through best-cad-mcp. Also use to review
+  mechanical and assembly drawings through analysis-cad-mcp. Also use to review
   component, pipe, or part interference and insufficient clearance, annotate
   supplied or verified clash locations with numbered markers and leaders,
   and describe each issue with coordinates, affected objects, evidence, and
@@ -14,11 +14,16 @@ description: >-
 
 # Analysis CAD MCP
 
-Use this skill as the operating guide for best-cad-mcp. Treat AutoCAD as the
+Use this skill as the operating guide for analysis-cad-mcp. Treat AutoCAD as the
 source of truth once a DWG exists, external images as hypotheses until converted
 to validated `ImageDrawingSpec/v1`, SQLite as model-private CAD memory,
 prompt/resources as reusable guidance, and CADPlan as the guarded path for
 multi-step generation or repair.
+
+Register the existing AutoCAD MCP service under the client connection name
+`analysis-cad-mcp`, matching `agents/openai.yaml`. Use its configured launch
+command, such as `cad-mcp`; the connection alias and executable name are separate
+settings.
 
 ## Reference Routing
 
@@ -47,10 +52,10 @@ Read only the references needed for the task:
   `check_runtime_environment(check_autocad=True)`. Treat `ok=false` as a
   blocker. For strict deployments, expect `CAD_MCP_STRICT_PREFLIGHT=1` to make
   the server refuse startup when required checks fail.
-- Use the active best-cad-mcp AutoCAD connection. Do not launch another AutoCAD
+- Use the active analysis-cad-mcp AutoCAD connection. Do not launch another AutoCAD
   process.
 - Do not write standalone Python, VBA, LISP, or pywin32 COM scripts to modify
-  drawings. Add or fix a best-cad-mcp tool when COM behavior is missing.
+  drawings. Add or fix a analysis-cad-mcp tool when COM behavior is missing.
 - Understanding, scans, CAD-IR/resource reads, semantic detection, dimension
   binding, constraints, validation, image trace preparation, VLM grounding,
   prompt reads, CADPlan validation, fidelity checks, and dry-runs must not
@@ -330,7 +335,7 @@ than confidence supports.
 
 Do not keep assembly-standard rules in this SKILL file. Load
 `references/assembly/index.md`, select the applicable standard module, and then
-use best-cad-mcp tools for the actual geometry, dimensions, BOM, balloons,
+use analysis-cad-mcp tools for the actual geometry, dimensions, BOM, balloons,
 sections, hatches, blocks, arrays, and exports.
 
 When standards conflict, apply the user's project/company/customer/national

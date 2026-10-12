@@ -1,6 +1,6 @@
 # analysis-CAD-MCP
 
-面向 AutoCAD 的图纸分析与碰撞点位标注 Skill。通过 `best-cad-mcp` 检查构件、管线、零件之间的干涉与净距问题，将已提供或经验证的点位转成编号标记、引线说明和可追溯的问题报告。
+面向 AutoCAD 的图纸分析与碰撞点位标注 Skill。通过 `analysis-cad-mcp` 检查构件、管线、零件之间的干涉与净距问题，将已提供或经验证的点位转成编号标记、引线说明和可追溯的问题报告。
 
 仓库名称为 **analysis-CAD-MCP**；Skill 标识为 **`analysis-cad-mcp`**，显式调用方式是 `$analysis-cad-mcp`。
 
@@ -41,7 +41,7 @@ git clone --depth 1 https://github.com/weiweidounais/analysis-CAD-MCP.git .agent
 
 如果仓库是私有的，先完成 GitHub 身份验证。Skill 可以在下一轮消息中发现；未显示时重新打开 Codex。
 
-安装 Skill 不会自动安装或连接 MCP 服务。实际 CAD 操作需要另行配置 [best-cad-mcp](https://github.com/LokmenoWer/best-cad-mcp)；其运行环境为 **Windows + 已安装并授权的 AutoCAD + Python 3.11 或更新版本**。服务器和 AutoCAD 应使用同一 Windows 账户。
+安装 Skill 后，将已有的 AutoCAD MCP 连接在客户端注册为 **`analysis-cad-mcp`**，沿用已配置的服务启动命令（例如 `cad-mcp`）。这个名称是客户端连接标识，服务程序通过原有方式安装和运行。实际 CAD 操作要求 **Windows + 已安装并授权的 AutoCAD + Python 3.11 或更新版本**；服务器和 AutoCAD 应使用同一 Windows 账户。
 
 ## 触发方式
 
@@ -105,6 +105,6 @@ analysis-CAD-MCP/
 
 ## 来源与许可
 
-本 Skill 派生自 [LokmenoWer/best-cad-mcp](https://github.com/LokmenoWer/best-cad-mcp) 的 `draw-assembly-diagrams`，基于上游提交 `9f6e3a91c54026e9a253ffdffb869ae63f6af2a8`，保留原装配图参考模块及 MIT 许可。当前版本增加了物理碰撞点位与净距审查的标注/描述流程、中文 Preview 和示意图片。
+analysis-CAD-MCP 基于 MIT 许可的机械装配图工作流扩展，来源版本为 `9f6e3a91c54026e9a253ffdffb869ae63f6af2a8`。保留原装配图参考模块及原作者版权声明，增加物理碰撞点位与净距审查的标注/描述流程、中文 Preview 和示意图片。
 
 许可见 [LICENSE](LICENSE)，原作者版权声明保留。Preview 图片为本项目原创合成示意，随本项目以 MIT 许可发布；图片不暗示已经完成真实 CAD 检测。
